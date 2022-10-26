@@ -1,0 +1,20 @@
+.son {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #f00;
+  box-sizing: border-box;
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 800px;
+  border: 1px solid #000;
+  width: 300px;
+}
+.parent02 {
+  display: flex;
+  justify-content: space-evenly;
+}
