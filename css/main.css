@@ -20,8 +20,9 @@
   position: absolute;
   left: 60px;
   top: 50%;
-  font-size: 16px;
+  font-size: clamp(16px, 5vw, 24px);
   font-weight: 300;
+  transform: translateY(-50%);
 }
 #main-visual .list li .txt p {
   margin-bottom: 15px;
@@ -36,7 +37,7 @@
   display: block;
 }
 #main-visual .list li .txt strong {
-  font-size: 20px;
+  font-size: clamp(20px, 10vw, 48px);
   font-weight: 700;
 }
 #main-visual .list .visual01 {
@@ -86,24 +87,24 @@
 }
 
 .contents-box {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 .contents-box h2 {
-  font-size: 36px;
+  font-size: clamp(18px, 10vw, 24px);
   color: #dd3156;
   font-weight: 700;
   margin-bottom: 30px;
 }
 .contents-box .banner {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 .contents-box .btns {
   position: absolute;
-  right: 0%;
-  top: 0;
+  right: 20px;
+  top: 120px;
 }
 .contents-box .btns i {
-  font-size: 25px;
+  font-size: 24px;
 }
 
 #introduce {
@@ -114,40 +115,45 @@
   margin-top: 100px;
 }
 #introduce ul li {
-  height: 380px;
+  height: 300px;
   width: 50%;
   position: relative;
   overflow: hidden;
 }
-#introduce ul li:hover .txt {
-  bottom: 50px;
-}
-#introduce ul li img {
+#introduce ul img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(0.9);
 }
-#introduce ul li .txt {
+#introduce ul .txt {
   position: absolute;
   color: #fff;
-  left: 50px;
-  bottom: -50px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  bottom: 20px;
   transition: all 0.5s ease-in-out 0.2s;
 }
-#introduce ul li .txt h3 {
-  font-size: 36px;
-  margin-bottom: 40px;
+#introduce ul .txt h3 {
+  font-size: clamp(18px, 8vw, 24px);
+  margin-bottom: 20px;
   font-weight: 500;
 }
-#introduce ul li .txt p {
+#introduce ul .txt p {
   line-height: 1.5;
+}
+#introduce ul .txt p br {
+  content: "";
 }
 
 #inner {
   overflow: hidden;
   background-color: #fff;
+}
+#inner .btns {
+  top: 60px;
 }
 #inner .banner {
   margin-top: 100px;
@@ -159,7 +165,7 @@
   height: 335px;
   width: 25%;
   position: relative;
-  margin: 0 0 50px 0;
+  margin: 0 0 20px 0;
 }
 #inner .banner ul li img {
   height: 100%;
@@ -182,15 +188,15 @@
   word-break: keep-all;
 }
 #inner .banner ul li .entry-meta .h3 {
-  font-size: 22px;
+  font-size: clamp(18px, 8vw, 24px);
   line-height: 1.2;
   font-weight: 600;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  height: 4.5em;
-  line-height: 1.5;
+  height: 2.4em;
+  line-height: 1.2;
 }
 #inner .banner ul li .entry-meta .h4 {
   font-size: 15px;
@@ -206,6 +212,9 @@
 }
 #notice .container {
   overflow: hidden;
+}
+#notice .btns {
+  top: 60px;
 }
 #notice .banner ul {
   width: 30%;
